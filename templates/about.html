@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<!--baner-->
+	<div class="baner about-bnr">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/about_1.png' ) }}" alt=""/>
+				</div>
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/about_2.png' ) }}" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//baner-->
+	
+	<!--about-->
+	<div class="about"> 
+		<div class="container">
+			<h3 class="title">About Bihari Fruits</h3>
+			<div class="about-text">
+				<div class="col-md-6 about-text-left">
+					<img src="{{ url_for('static', filename='images/img_u1.jpg' ) }}" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 about-text-right">
+					<h4>We provide good quality and fresh watermelon(tarabooj)</h4>
+					<p>We are here for your better and healthy fruits.A watermelon is a type of edible fruit, they are 92% water. About 6% of a watermelon is sugar, which makes it very sweet. There are many different types of watermelon. Some have a green rind on the outside and a red-pink flesh on the inside, with brown seeds.</p>
+					<p> Some can have yellow flesh, and some can be seedless. The green rind on the outside is not usually eaten, though it can be used as a vegetable. It can also be stewed or pickled. Most watermelons are oblong or spherical.</p>
+					<ul>
+						<li><a href="/gallery"><b>We are having more than 50 varities of watermelon. click out!!!</b></a></li>
+					</ul>
+					<a href="/gallery" class="more btn btn-1 btn-1b">See Products !!!</a>   
+					<a href="/order" class="more btn btn-1 btn-1b">Order Now</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="about-slid" > 
+			<div class="container">
+				<div class="about-slid-info"> 
+					<h2>Taza_Raseela_Tarabooj</h2>
+					<p>We are here to provide the oline platform to buy/sell the watermelon(tarabooj) at wholesale price...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-team">		
+		<div class="container">
+			<h3 class="title">Our Popluar-n-Fresh Products</h3>
+			<div class="row team-row">
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="{{ url_for('static', filename='images/product_3.png' ) }}" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="/order">Captivation Watermelons</a></h4>
+							<p>This is a <b>seedless variety</b> with Oblong / Uniform in shape and <b>Firm flesh that is sweet and tasty in flavour</b> with bright red flesh with deep green rind in color.</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="{{ url_for('static', filename='images/pro_1.png' ) }}" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="/order">Collection of all</a></h4>
+							<p>This is our collection of <b>Seeded/seedless watermelon</b> with round/oblong or ova in shape and <b>sweet/fiber flesh in flavour</b> with red flesh with a grey/green colored rind in color.</p>							
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="{{ url_for('static', filename='images/product_4.png' ) }}" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="/order">Bijou Watermelon</a></h4>
+							<p>This is a <b>seeded variety</b> with round or ova in shape and <b>sweet and crisp flesh in flavour</b> with red flesh / light or dark green stripped rind in color.</p>			
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="{{ url_for('static', filename='images/product_5.png' ) }}" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="/order">Charleston Grey Watermelons</a></h4>
+							<p>This is a <b>Seeded most popular watermelon</b> with oblong or ova in shape and <b>sweet fiber-less flesh in flavour</b> with red flesh with a grey/green colored rind in color.</p>					
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+
+{% endblock %}

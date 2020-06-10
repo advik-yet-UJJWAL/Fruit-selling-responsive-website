@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Taaze_Raseela_Tarabooj</title>
+
+	<link href="{{ url_for('static', filename='css/bootstrap.css' ) }}" type="text/css" rel="stylesheet" media="all">
+	<link href="{{ url_for('static', filename='css/style.css' ) }}" type="text/css" rel="stylesheet" media="all">
+
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //Custom Theme files -->
+	<!-- js -->
+	<script src="{{ url_for('static', filename='js/jquery-1.11.1.min.js' ) }}"></script> 
+	<!-- //js -->	
+	<!-- start-smoth-scrolling-->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/move-top.js' ) }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/easing.js' ) }}"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	
+	<!--//end-smoth-scrolling-->
+</head>
+
+<body >
+
+	<!--header-->
+	<div class="logo">
+		<div class="container">
+			<div class="logo-info">
+				
+
+			<p><img src="{{ url_for('static', filename='images/logo_ujjwal_1.png' ) }}"  width="100%" height="250"></p>
+			
+
+
+		</div>	
+	</div>
+	<!--//header-->	
+
+
+	<!--navigation-->
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="hvr-bounce-to-bottom active"><a href="/">Home</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/about">About</a></li>
+					
+					<li class="hvr-bounce-to-bottom"><a href="/gallery">Products</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/distributers">Distributers</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/order">Order Now</a></li>
+					<li class="hvr-bounce-to-bottom"><a href="/contact">Contact Us</a></li>
+				</ul>	
+				<div class="clearfix"> </div>
+			</div>	
+		</nav>		
+	</div>	
+	<!--//navigation-->
+
+
+
+	<!--BODY CONTENT HERE-->
+
+	{% block body %}  {% endblock %}
+
+
+
+	
+
+
+
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+
+<!-- footer -->
+	<div class="footer">	
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 footer-grid">
+					<h3 class="title">Services</h3>
+					<ul>
+						<li><a href="/distributers">Contact our distributors</a></li>
+						<li><a href="/order">Order ou latest products</a></li>
+						<li><a href="/gallery">See our fresh products</a></li>
+						<li><a href="/order">For Home Delivery</a></li>
+						<!--li><a href="#">Debitis aut rerum</a></li-->
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h3 class="title">Information</h3>
+					 <ul>
+						<li><a href="/">Bihari_Fruits</a></li>
+						<li><a href="/">Quality of services</a></li>
+						<li><a href="/">Customer Trust</a></li>
+						<li><a href="/contact">Our members</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h3 class="title">More details</h3>
+					<ul>
+						<li><a href="/about">About us</a></li>
+						<li><a href="/about">Privacy Policy</a></li>
+						<li><a href="/about">Terms &amp; Conditions</a></li>
+						<li><a href="/contact">Site map</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid contact-grid">
+						<h3 class="title">Contact us</h3>
+						<ul>
+							<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Fatehabad,Geyaspur,paroo.</li>							
+							<li class="adrs">Muzaffarpur,Bihar-843107</li>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-9934323359</li>
+							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:uk61461@gmail.com">uk61461@gmail.com</a></li>
+						</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="copy">
+		<div class="container">
+			<div class="copy-left">
+				<p>Copyright © 2020 Bihari_Fruits. All rights reserved | Design by <a href="mailto:uk61461@.com">Ujjwal Kumar</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

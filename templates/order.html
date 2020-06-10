@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	
+	<div class="container">
+			<h3 class="title">Hurry up!!! Order Now -we have special offers</h3>
+	</div>
+	<div class="baner about-bnr">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/gallery_head_1.png' ) }}" alt=""/>
+				</div>
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/gallery_head_2.png' ) }}" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="typo">
+		<div class="container">
+			<h3 class="title">Message us to order/contact our distributors</h3>
+
+			<div class="grid_3 grid_5">
+				<h3>Message Format</h3>
+				
+				<div class="well" align="left" width="50%">
+					<b>Customer Name</b> : -----------<br>
+					<b>Distributer Name</b> : -----------<br>
+					<b>Distributer ID</b> : -----------<br>
+					<b>Order quantity </b>(in Quintal) : ------------<br>
+					<b>Place of delivery</b> : ---------<br>
+					<b>Contact No.</b> : -------------<br>
+				</div>
+				
+			</div>
+
+
+ 			<h3 class="title">Fill out the form to order/contact our distributors</h3>
+
+
+ 			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2q58KvdAOfHDdQDz9cgaOQ1xC2Hj_uB8EdAm3uaunW6QN2A/viewform?embedded=true" width="100%" height="4308" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+ {% endblock %}

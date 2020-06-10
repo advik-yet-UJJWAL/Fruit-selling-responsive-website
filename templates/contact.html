@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	<!--baner-->
+	<div class="baner about-bnr">
+		<div class="container">
+			<div class="baner-grids">
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/gallery_head_1.png' ) }}" alt=""/>
+				</div>
+				<div class="col-md-6 baner-top">
+					<img src="{{ url_for('static', filename='images/gallery_head_2.png' ) }}" alt=""/>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78512.97727418442!2d84.96377634299355!3d26.06672766740369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed33856b632f8d%3A0x3e61f96dffc0f469!2sGhayaspur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1586081395514!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>		
+	</div>
+	<!--//map-->
+
+	<!--contact-->
+	<div class="contact">
+		<div class="container">
+			<h3 class="title">Contact us</h3>
+
+
+			<div class="contact-form" >
+				<form onclick="/contact" method="POST">
+					<input type="text" value="Name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+					<div class="col-md-6 cnt-inpt">
+						<input type="email" value="Email" name="email"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+					</div>
+					<div class="col-md-6 cnt-inpt">
+						<input type="text" value="Telephone" name="phn" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+					</div>
+					<div class="clearfix"> </div>
+					<textarea onfocus="this.value = '' ;" name="msg" onblur="if (this.value == '') {this.value = 'Message...';}" required=""> Message... </textarea>
+					<input type="submit" value="Submit">
+				</form>
+			</div>			
+		
+		</div>
+	</div>
+	<!--//contact-->	
+
+	<div class="about"> 
+		<div class="container">
+			<h3 class="title">About Our Technical Person</h3>
+			<div class="about-text">
+				<div class="col-md-6 about-text-left">
+					<img src="{{ url_for('static', filename='images/dev_kumar.png' ) }}" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 about-text-right">
+					<h4>Ujjwal Kumar(M.L Engineer,Data Scientist)</h4>
+					<h4>At-The AVA-TECH Solutions</h4>
+					<p>Ujjwal Kumar is a software engineer from Gandhi Institute For Technology,(GIFT),Bhubaneswar,Odisha.He is currently B.Tech 4th year student of Computer Science and Engineering Branch.He is having +2 year experience in Python,Data Analytics,Machine Learning and openCV.</p>
+					<p>This project is developed under the guidance and continous support from Ujjwal Kumar.</p>
+					
+					<ul>
+						<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Boys-Hostel,GAndhi Institute For Technology.</li>
+						<li class="adrs">Bhubaneswar,Odisha-7552054</li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+91-7634900918</li>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:uk61461@gmail.com">uk61461@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	
+	{% endblock %}
